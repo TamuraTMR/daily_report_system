@@ -19,10 +19,16 @@ public class ReportValidator {
     public static List<String> validate(ReportView rv) {
         List<String> errors = new ArrayList<String>();
 
-      //出退勤時間のチェック
+      //出勤時間のチェック
         String timeError = validateTime(rv.getTime());
         if (!timeError.equals("")) {
             errors.add(timeError);
+        }
+
+      //退勤時間のチェック
+        String time2Error = validateTime2(rv.getTime2());
+        if (!time2Error.equals("")) {
+            errors.add(time2Error);
         }
 
         //タイトルのチェック
@@ -41,13 +47,27 @@ public class ReportValidator {
     }
 
     /**
-     * 出退勤時間に入力値があるかをチェックし、入力値がなければエラーメッセージを返却
-     * @param time 出退勤時間
+     * 出勤時間に入力値があるかをチェックし、入力値がなければエラーメッセージを返却
+     * @param time 出勤時間
      * @return エラーメッセージ
      */
     private static String validateTime(String time) {
         if (time == null || time.equals("")) {
             return MessageConst.E_NOTIME.getMessage();
+        }
+
+        //入力値がある場合は空文字を返却
+        return "";
+    }
+
+    /**
+     * 退勤時間に入力値があるかをチェックし、入力値がなければエラーメッセージを返却
+     * @param time2 退勤時間
+     * @return エラーメッセージ
+     */
+    private static String validateTime2(String time2) {
+        if (time2 == null || time2.equals("")) {
+            return MessageConst.E_NOTIME2.getMessage();
         }
 
         //入力値がある場合は空文字を返却

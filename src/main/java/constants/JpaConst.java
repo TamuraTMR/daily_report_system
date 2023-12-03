@@ -31,7 +31,8 @@ public interface JpaConst {
     String REP_COL_ID = "id"; //id
     String REP_COL_EMP = "employee_id"; //日報を作成した従業員のid
     String REP_COL_REP_DATE = "report_date"; //いつの日報かを示す日付
-    String REP_COL_TIME = "time"; //出退勤時間
+    String REP_COL_TIME = "time"; //出勤時間
+    String REP_COL_TIME2 = "time2"; //退勤時間
     String REP_COL_TITLE = "title"; //日報のタイトル
     String REP_COL_CONTENT = "content"; //日報の内容
     String REP_COL_CREATED_AT = "created_at"; //登録日時

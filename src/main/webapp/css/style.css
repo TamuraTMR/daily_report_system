@@ -131,6 +131,10 @@ table#report_list .report_time {
     width: 37%;
 }
 
+table#report_list .report_time2 {
+    width: 37%;
+}
+
 table#report_list .report_title {
     width: 37%;
 }

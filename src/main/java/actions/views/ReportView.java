@@ -34,9 +34,14 @@ public class ReportView {
     private LocalDate reportDate;
 
     /**
-     * 出退勤時間
+     * 出勤時間
      */
     private String time;
+
+    /**
+     * 退勤時間
+     */
+    private String time2;
 
     /**
      * 日報のタイトル
