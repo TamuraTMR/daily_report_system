@@ -70,6 +70,12 @@ public class Report {
     private LocalDate reportDate;
 
     /**
+     * 出退勤時間
+     */
+    @Column(name = JpaConst.REP_COL_TIME, length = 255, nullable = false)
+    private String time;
+
+    /**
      * 日報のタイトル
      */
     @Column(name = JpaConst.REP_COL_TITLE, length = 255, nullable = false)
