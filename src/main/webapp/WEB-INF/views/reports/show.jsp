@@ -29,7 +29,7 @@
                 </tr>
                 <tr>
                     <th>退勤時間</th>
-                    <td><pre><c:out value="${report.time}" /></pre></td>
+                    <td><pre><c:out value="${report.time2}" /></pre></td>
                 </tr>
                 <tr>
                     <th>内容</th>
